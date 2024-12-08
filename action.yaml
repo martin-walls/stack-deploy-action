@@ -32,9 +32,6 @@ inputs:
   env_file:
     description: "Environment File"
     required: false
-  args:
-    description: "Additional arguments to pass to docker stack deploy"
-    required: false
   registry:
     description: "Docker registry to log in to"
     required: false
