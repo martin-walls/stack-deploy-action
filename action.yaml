@@ -32,18 +32,15 @@ inputs:
   env_file:
     description: "Environment File"
     required: false
-  args:
-    description: "Extra args to pass to docker stack deploy"
+  registry:
+    description: "Docker registry to log in to"
     required: false
-  # registry:
-  #   description: "Docker registry to log in to"
-  #   required: false
-  # registry_username:
-  #   description: "Username for the Docker registry"
-  #   required: false
-  # registry_password:
-  #   description: "Password for the Docker registry"
-  #   required: false
+  registry_username:
+    description: "Username for the Docker registry"
+    required: false
+  registry_password:
+    description: "Password for the Docker registry"
+    required: false
 
 runs:
   using: "docker"
