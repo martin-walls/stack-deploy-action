@@ -69,4 +69,4 @@ if [ -n "${INPUT_REGISTRY}" ]; then
 fi
 
 echo -e "\u001b[36mDeploying Stack: \u001b[37;1m${INPUT_NAME}"
-docker stack deploy -c "${INPUT_FILE}" "${INPUT_NAME}" "${ARGS}"
+docker stack deploy -c "${INPUT_FILE}" "${INPUT_NAME}" ${ARGS}
